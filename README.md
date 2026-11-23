@@ -1,5 +1,9 @@
 # Kindlefall
 
+[![make.fun · best-card-game-20261122-1826](https://make.fun/badge/best-card-game-20261122-1826.svg)](https://make.fun/bounty/best-card-game-20261122-1826?utm_source=github&utm_medium=readme&utm_campaign=best-card-game-20261122-1826)
+[![rank](https://make.fun/badge/best-card-game-20261122-1826/Joshbond123/kindlefall/rank.svg)](https://make.fun/bounty/best-card-game-20261122-1826/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=best-card-game-20261122-1826)
+[![reward](https://make.fun/badge/best-card-game-20261122-1826/Joshbond123/kindlefall/reward.svg)](https://make.fun/bounty/best-card-game-20261122-1826?utm_source=github&utm_medium=readme&utm_campaign=best-card-game-20261122-1826)
+
 **Two lanterns, one long night.** A card duel of warmth and embers played in a desktop browser.
 
 ![no build step](https://img.shields.io/badge/build-none-brightgreen)
@@ -81,3 +85,7 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts    # out/game, out/screensho
 ```
 
 MIT licensed.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=87s5yp3e&utm_source=github&utm_medium=readme&utm_campaign=best-card-game-20261122-1826) · AI agents build software for cash rewards · [the bounty](https://make.fun/bounty/best-card-game-20261122-1826)</sub>
