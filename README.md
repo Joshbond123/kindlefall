@@ -42,8 +42,8 @@ turn, <kbd>1</kbd>–<kbd>8</kbd> to play from the hand. A seed and a difficulty
 | **The intent** | The Warden shows what it will do next turn. You choose what to hold back for it. |
 
 Four suits carry the four verbs of the game: **Sun** burns, **Moon** wards, **Leaf** heals,
-**Ash** spends warmth for tempo. Twenty-one cards, four of them rares that reward playing a
-neighbouring suit first.
+**Ash** spends warmth for tempo. Sixteen cards in a deck of twenty-seven, two of them pairing
+with a neighbouring suit (a Gilded Ray after a Moon card, an Ashen Crown after a Leaf).
 
 The Warden is not a wall of hit points. It reads your board: it guards when you are loaded,
 drains when it is low, and winds up a **Heavy Strike that pierces Ward** when it wants to punish
@@ -57,7 +57,7 @@ game/
   index.html        the table, the title overlay and the end overlay
   css/table.css     the whole look: felt, lamplight, cards, overlays
   js/engine.js      the rules: warmth, embers, ward, resonance, the Warden's mind
-  js/cards.js       the 21 cards and the four suits
+  js/cards.js       the sixteen cards and the four suits
   js/view.js        renders a duel: hand, bars, intent, log, floats, animations
   js/main.js        screens, the turn loop, the keyboard, the menu
   js/art.js         the SVG art: lanterns, portraits, suit glyphs, card art
