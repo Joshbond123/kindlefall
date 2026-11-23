@@ -73,10 +73,11 @@ balance simulator that set the Warden's numbers.
 
 ## Balance
 
-`node tools/sim.mjs` plays thousands of seeded duels with three policies (greedy, defensive,
-reckless) across the three difficulties and prints win rates, game length and damage taken. The
-shipped numbers come from it: a careful player wins about four in five on *steady*, most of those
-with a quarter of their warmth left.
+`node tools/sim.mjs` plays hundreds of seeded duels with three policies (careful, reckless,
+passive) across the three difficulties and prints win rates, game length, damage dealt and warmth
+left. The shipped numbers come from it: a careful player wins 98% on *kindled*, 93% on *steady*
+and 73% on *hollow*, usually in eight or nine turns with a third of the lantern still lit, while a
+player who only races loses 97% of the time and one who only hoards always loses.
 
 ## Handing it in
 

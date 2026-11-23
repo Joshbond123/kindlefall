@@ -201,5 +201,23 @@ document.getElementById('btn-menu').addEventListener('click', () => {
   titleScreen();
 });
 
+// The table is drawn at one size and scaled to the window, so a big monitor
+// gets the same composition, just larger, instead of a small table in a void.
+const tableEl = document.querySelector('.table');
+function fitTable() {
+  const scale = Math.min(window.innerWidth / 1280, window.innerHeight / 800);
+  if (scale <= 1) {
+    tableEl.style.zoom = '';
+    tableEl.style.width = '';
+    tableEl.style.height = '';
+    return;
+  }
+  tableEl.style.width = '1280px';
+  tableEl.style.height = '800px';
+  tableEl.style.zoom = String(Math.min(scale, 1.6));
+}
+window.addEventListener('resize', fitTable);
+fitTable();
+
 titleScreen();
 document.body.dataset.ready = 'true';
