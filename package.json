@@ -1,0 +1,11 @@
+{
+  "name": "kindlefall",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A card duel of warmth and embers, played in a desktop browser.",
+  "scripts": {
+    "start": "node serve.ts",
+    "sim": "node tools/sim.mjs"
+  }
+}

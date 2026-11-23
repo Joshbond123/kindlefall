@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kindlefall — a duel of lantern-keepers</title>
+<link rel="stylesheet" href="./css/table.css">
+</head>
+<body>
+<main id="app" class="app">
+
+  <section id="table" class="table" aria-label="The duel table">
+    <header class="hud">
+      <div class="brand">
+        <span class="brand-sigil" id="brand-sigil"></span>
+        <span class="brand-word">KINDLEFALL</span>
+      </div>
+      <div class="hud-turn">
+        <span id="turn-count" class="turn-count">Turn 1</span>
+        <span class="turn-dot"></span>
+        <span id="turn-label" class="turn-label">Your turn</span>
+      </div>
+      <div class="hud-tools">
+        <button id="btn-sound" class="tool" type="button" aria-pressed="true">Sound on</button>
+        <button id="btn-menu" class="tool" type="button">Leave duel</button>
+      </div>
+    </header>
+
+    <section id="rival" class="side rival" aria-label="The Warden">
+      <div class="side-head">
+        <div class="portrait" id="rival-portrait"></div>
+        <div class="side-id">
+          <span class="side-name" id="rival-name">The Hollow Warden</span>
+          <span class="side-note" id="rival-note">keeper of the cold lantern</span>
+        </div>
+        <div class="vitals">
+          <div class="warmth">
+            <span class="warmth-label">Warmth</span>
+            <span class="warmth-track"><span id="rival-warmth-fill" class="warmth-fill"></span></span>
+            <span id="rival-warmth-value" class="warmth-value">28</span>
+          </div>
+          <div class="ward-chip" id="rival-ward-chip">
+            <span class="ward-icon" id="rival-ward-icon"></span>
+            <span id="rival-ward-value">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="rival-row">
+        <div class="intent" id="intent">
+          <span class="intent-icon" id="intent-icon"></span>
+          <span class="intent-body">
+            <span class="intent-title" id="intent-title">Reading…</span>
+            <span class="intent-tell" id="intent-tell"></span>
+          </span>
+        </div>
+        <div class="rival-hand" id="rival-hand" aria-label="The Warden's hand"></div>
+      </div>
+    </section>
+
+    <section class="board">
+      <div class="lantern" id="lantern" aria-hidden="true"></div>
+      <div class="resonance" id="resonance" aria-label="Suits played this turn"></div>
+      <div class="float-layer" id="float-layer" aria-hidden="true"></div>
+      <aside class="log" id="log" aria-label="Duel log"></aside>
+    </section>
+
+    <section id="player" class="side player" aria-label="You">
+      <div class="side-head">
+        <div class="portrait" id="player-portrait"></div>
+        <div class="side-id">
+          <span class="side-name">You</span>
+          <span class="side-note" id="player-note">keeper of the bright lantern</span>
+        </div>
+        <div class="vitals">
+          <div class="warmth">
+            <span class="warmth-label">Warmth</span>
+            <span class="warmth-track"><span id="player-warmth-fill" class="warmth-fill"></span></span>
+            <span id="player-warmth-value" class="warmth-value">28</span>
+          </div>
+          <div class="ward-chip" id="player-ward-chip">
+            <span class="ward-icon" id="player-ward-icon"></span>
+            <span id="player-ward-value">0</span>
+          </div>
+        </div>
+        <div class="embers">
+          <span class="embers-label">Embers</span>
+          <span class="embers-pips" id="embers-pips"></span>
+        </div>
+      </div>
+      <div class="player-row">
+        <div class="hand" id="hand" aria-label="Your hand"></div>
+        <div class="turn-actions">
+          <div class="deck-count"><span class="deck-icon" id="deck-icon"></span><span id="deck-value">18</span></div>
+          <button id="btn-end" class="end-turn" type="button">End turn <span class="key">space</span></button>
+          <span class="hint" id="hint">Play cards, then end your turn.</span>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <div id="overlay" class="overlay" role="dialog" aria-modal="true"></div>
+  <div id="flash" class="flash" aria-hidden="true"></div>
+</main>
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
